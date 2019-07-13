@@ -1,0 +1,308 @@
+
+body {
+  background-color: #ededed;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+.frame {
+  display: flex;
+  flex-basis: 1400px;
+  min-width: 800px;
+  max-width: 1300px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+.frame p {
+  color: black;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 0 50px #000;
+  transition: transform .5s;
+}
+
+.nav-open main {
+  transform: scale(.8);
+}
+
+
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+.nav-trigger {
+  position: fixed;
+  z-index: 4;
+  top: 40px;
+  right: 40px;
+  height: 44px;
+  width: 44px;
+
+
+  color: transparent;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  height: 4px;
+  width: 36px;
+  background: #0072fc;
+}
+
+.nav-trigger span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background .3s;
+}
+
+.nav-trigger span::before,
+.nav-trigger span::after {
+  content: '';
+  top: 0;
+  left: 0;
+  transition: background .3s, transform .3s;
+}
+
+.nav-trigger span::before {
+  transform: translateY(-12px);
+}
+
+.nav-trigger span::after {
+  transform: translateY(12px);
+}
+
+.nav-trigger:hover span,
+.nav-trigger:hover span::before,
+.nav-trigger:hover span::after {
+  background: white;
+}
+
+.nav-open .nav-trigger span {
+  background: transparent;
+}
+
+.nav-open .nav-trigger span::before,
+.nav-open .nav-trigger span::after {
+  background: #FFF;
+}
+
+.nav-open .nav-trigger span::before {
+  transform: rotate(-45deg);
+}
+
+.nav-open .nav-trigger span::after {
+  transform: rotate(45deg);
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0072fc;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.nav-open .overlay {
+  opacity: .5;
+  visibility: visible;
+
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 500px;
+  padding: 2em 3.5em;
+  background: #0072fc;
+  overflow: auto;
+  transform: translateZ(0);
+  transform: translateX(100%);
+  transition: transform .5s cubic-bezier(.07,.23,.34,1);
+}
+
+.nav-open .nav-container {
+  transform: translateX(0);
+}
+
+.nav-container h2 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 1.5em 0;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  padding: .4em 0;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: none;
+  color: #FFF;
+  transform: translateZ(0);
+}
+
+.nav-open .nav a {
+  animation: slide-in .4s .2s backwards;
+}
+
+.nav-open .nav li:nth-of-type(2) a {
+  animation-delay: .3s;
+}
+
+.nav-open .nav li:nth-of-type(3) a {
+  animation-delay: .4s;
+}
+
+.nav-open .nav li:nth-of-type(4) a {
+  animation-delay: .5s;
+}
+
+.nav-open .nav li:nth-of-type(5) a {
+  animation-delay: .6s;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.outline {
+  color: #ededed;
+   -webkit-text-stroke: 2px #0072fc;
+   font-family: 'Archivo Black',sans-serif;
+}
+
+#glasses {
+  margin-left: 30px;
+  margin-right: -20px;
+}
+
+#box {
+  margin-left: -15px;
+  margin-right: -20px;
+  margin-bottom: -10px;
+}
+
+#waves {
+  margin-left: -5px;
+}
+
+#eye {
+margin-bottom: -5px;
+}
+
+#skull {
+margin-bottom: -10px;
+}
+
+#package {
+margin-bottom: -15px;
+margin-left: -10px;
+margin-right: 30px;
+}
+
+
+
+.underline {
+  border-bottom: 4px dotted #0072fc;
+
+}
+
+#portfolio {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.project a{
+font-family: 'Fjalla One', sans-serif;
+  font-size: 130px;
+  font-weight: 700;
+  color: black;
+  transition: .2s;
+  transition-timing-function: ease-in-out;
+}
+#spectre-img {
+  display: none;
+  height: 170px;
+  width: 500px;
+  background-image: url(/img/sat-img-1.jpg);
+  background-size: 100% 100%;
+  outline: 2px solid red;
+}
+
+.project a:hover {
+font-size: 165px;
+color: #0072fc;
+letter-spacing: -15px;
+}
+ .project:hover #spectre-img {
+   display: block;
+ }
+
+.project p {
+  display: inline-block;
+}
+.details {
+  display: inline-block;
+  width: 200px;
+  height: 75px;
+  margin-left: 15px;
+}
+.details p {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 15px;
+}
+
+
+hr {
+  display:inline-block;
+  border-width: 1.5px;
+  width: 50px;
+  color: #0072fc;
+  border-style: solid;
+  margin-bottom: -5px;
+}
