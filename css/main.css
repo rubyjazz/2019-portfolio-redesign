@@ -39,7 +39,7 @@ main {
 }
 
 
-h1 {
+.nav h1 {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -115,7 +115,7 @@ h1 {
 .nav-open .nav-trigger span::after {
   transform: rotate(45deg);
 }
-
+/*
 .overlay {
   position: fixed;
   z-index: 2;
@@ -134,14 +134,14 @@ h1 {
   visibility: visible;
 
 }
-
+*/
 .nav-container {
   position: fixed;
   z-index: 3;
   top: 0;
   right: 0;
-  height: 100%;
-  width: 500px;
+  height: 40%;
+  width: 100%;
   padding: 2em 3.5em;
   background: #0072fc;
   overflow: auto;
@@ -257,21 +257,14 @@ margin-right: 30px;
   list-style: none;
 }
 
-.project a{
+.project a {
 font-family: 'Fjalla One', sans-serif;
   font-size: 130px;
   font-weight: 700;
   color: black;
   transition: .2s;
   transition-timing-function: ease-in-out;
-}
-#spectre-img {
-  display: none;
-  height: 170px;
-  width: 500px;
-  background-image: url(/img/sat-img-1.jpg);
-  background-size: 100% 100%;
-  outline: 2px solid red;
+  z-index: 100;
 }
 
 .project a:hover {
@@ -279,8 +272,25 @@ font-size: 165px;
 color: #0072fc;
 letter-spacing: -15px;
 }
- .project:hover #spectre-img {
+
+ #spectre-img {
+   display: none;
+   height: 0px;
+   width: 500px;
+   background: url(img/sat-img-1.jpg);
+   outline: 2px solid red;
+   z-index: 1;
+   position:relative;
+   margin-top: -100px;
+   transition: 0.5s;
+    -webkit-transition: 0.5s;
+ }
+
+ .project:hover > #spectre-img {
    display: block;
+   height: 200px;
+   transition: 0.5s;
+    -webkit-transition: 0.5s;
  }
 
 .project p {
