@@ -1,11 +1,14 @@
 
 body {
   background-color: #ededed;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   text-decoration-style: none;
+  color: black;
 }
 
 .frame {
@@ -15,7 +18,8 @@ a {
   max-width: 1300px;
   margin-left: 50px;
   margin-right: 50px;
-
+  position: relative;
+  border: 1px solid blue;
 }
 
 .frame p {
@@ -273,29 +277,34 @@ color: #0072fc;
 letter-spacing: -15px;
 }
 
- #spectre-img {
+ .img {
    visibility: hidden;
    height: 0px;
    width: 500px;
-   background: url(../img/sat-img-1.jpg);
    z-index: 1;
    position:relative;
    margin-top: -100px;
-   transition: 0.5s;
-    -webkit-transition: 0.5s;
+   filter:invert(100%);
+   transition: .75s;
+    -webkit-transition: .75s;
  }
 .show {
   display: inline-block;
 }
- .show:hover > #spectre-img {
+ .show:hover > .img {
   visibility: visible;
    height: 200px;
    font-size: 165px;
    color: #0072fc;
    letter-spacing: -15px;
-   transition: 0.5s;
-    -webkit-transition: 0.5s;
+   filter:invert(0%);
+   transition: .75s;
+    -webkit-transition: .75s;
  }
+
+#spectre-img {
+  background-image: url(../img/sat-img-1.jpg);
+}
 
 .project p {
   display: inline-block;
@@ -319,4 +328,53 @@ hr {
   color: #0072fc;
   border-style: solid;
   margin-bottom: -5px;
+}
+
+#footer {
+   bottom:0;
+   width:100%;
+   border: 1px solid red;
+}
+
+#footer p {
+  position: absolute;
+  display: inline-block;
+  margin-top: 125px;
+  margin-left: -30px;
+}
+
+#footer a {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transition: .25s;
+   -webkit-transition: .25s;
+   transition-timing-function: ease-in-out;
+}
+
+#footer a:hover {
+  color: #0072fc;
+  font-size: 21px;
+}
+
+#fatcat {
+  display: inline-block;
+  height: 200px;
+  width: 230px;
+  background-image: url(../img/fatcat.svg);
+  background-size: 100% 100%;
+  background-position: bottom;
+  margin: 100px 40px 0px 50px;
+}
+
+#copyright {
+  position:relative;
+  display: inline-block;
+  border: 1px solid green;
+}
+
+#copyright p {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 15px;
+  display:block;
 }
