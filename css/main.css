@@ -274,7 +274,7 @@ letter-spacing: -15px;
 }
 
  #spectre-img {
-   display: none;
+   visibility: hidden;
    height: 0px;
    width: 500px;
    background: url(../img/sat-img-1.jpg);
@@ -288,7 +288,7 @@ letter-spacing: -15px;
   display: inline-block;
 }
  .show:hover > #spectre-img {
-   display: block;
+  visibility: visible;
    height: 200px;
    font-size: 165px;
    color: #0072fc;
