@@ -258,9 +258,10 @@ margin-right: 30px;
 #portfolio {
   margin-top: 50px;
   list-style: none;
+  border: 1px solid red;
 }
 
-.project a {
+.project p {
 font-family: 'Fjalla One', sans-serif;
   font-size: 130px;
   font-weight: 700;
@@ -268,9 +269,11 @@ font-family: 'Fjalla One', sans-serif;
   transition: .2s;
   transition-timing-function: ease-in-out;
   z-index: 100;
+  border: 1px solid red;
+  margin: 0;
 }
 
-.show:hover a {
+.show:hover p {
 font-size: 165px;
 color: #0072fc;
 letter-spacing: -15px;
@@ -282,10 +285,18 @@ letter-spacing: -15px;
    width: 0px;
    z-index: 1;
    position:relative;
-   margin-top: -100px;
    filter:invert(100%);
    transition: .75s;
     -webkit-transition: .75s;
+    border: 1px solid blue;
+ }
+
+ .img a {
+   position:absolute;
+   height: 100%;
+   width: 100%;
+   border: 1px solid green;
+
  }
 .show {
   display: inline-block;
@@ -296,6 +307,7 @@ letter-spacing: -15px;
    width: 600px;
    font-size: 165px;
    color: #0072fc;
+  margin-top: -80px;
    letter-spacing: -15px;
    filter:invert(0%);
    transition: .75s;
