@@ -19,7 +19,6 @@ a {
   margin-left: 50px;
   margin-right: 50px;
   position: relative;
-  border: 1px solid blue;
 }
 
 .frame p {
@@ -280,7 +279,7 @@ letter-spacing: -15px;
  .img {
    visibility: hidden;
    height: 0px;
-   width: 500px;
+   width: 0px;
    z-index: 1;
    position:relative;
    margin-top: -100px;
@@ -293,7 +292,8 @@ letter-spacing: -15px;
 }
  .show:hover > .img {
   visibility: visible;
-   height: 200px;
+   height: 300px;
+   width: 600px;
    font-size: 165px;
    color: #0072fc;
    letter-spacing: -15px;
@@ -303,7 +303,28 @@ letter-spacing: -15px;
  }
 
 #spectre-img {
+  background-image: url(../img/spectre-img-4.png);
+}
+
+#sat-img {
   background-image: url(../img/sat-img-1.jpg);
+}
+
+#cent-img {
+  background-image: url(../img/cent-menu-img.png);
+}
+
+#gh-illo-img {
+  background-image: url(../img/gh-illo-menu-img.png);
+}
+
+#game-off-img {
+  background-image: url(../img/game-off-menu-img.gif);
+  background-size: 100%;
+}
+
+#mural-img {
+background-image: url(../img/mural-menu-img.png);
 }
 
 .project p {
@@ -331,14 +352,14 @@ hr {
 }
 
 #footer {
+  display: inline-block;
    bottom:0;
    width:100%;
-   border: 1px solid red;
 }
 
 #footer p {
-  position: absolute;
   display: inline-block;
+  position: absolute;
   margin-top: 125px;
   margin-left: -30px;
 }
@@ -357,6 +378,17 @@ hr {
   font-size: 21px;
 }
 
+#footer span {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 10px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  margin-top: 150px;
+}
+
 #fatcat {
   display: inline-block;
   height: 200px;
@@ -364,17 +396,6 @@ hr {
   background-image: url(../img/fatcat.svg);
   background-size: 100% 100%;
   background-position: bottom;
-  margin: 100px 40px 0px 50px;
-}
-
-#copyright {
-  position:relative;
-  display: inline-block;
-  border: 1px solid green;
-}
-
-#copyright p {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 15px;
-  display:block;
+  margin: 100px 40px -5px 50px;
+  float: left;
 }
