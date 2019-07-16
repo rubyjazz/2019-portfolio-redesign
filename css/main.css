@@ -21,6 +21,18 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
+  flex-direction: column;
+}
+
+.project-frame {
+  display: flex;
+  flex-basis: 90vw;
+  margin: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position: relative;
+  border: 1px;
+  flex-direction: column;
 }
 
 .frame p {
@@ -492,3 +504,72 @@ hr {
 }
 
 /*PROJECT PAGES*/
+
+
+
+.half-img-left {
+  width: 50vw;
+  position:relative;
+  height:auto;
+  float:left;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  background-size: 100%;
+  background-color: white;
+}
+.half-img-right {
+  width: 50vw;
+  position:relative;
+  margin-left: auto;
+  order: 2;
+  height:auto;
+  float:left;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  background-size: 100%;
+  background-color: black;
+}
+.half-img-center {
+  width: 50vw;
+  height:auto;
+  margin: auto;
+  margin-top: -5vw;
+  margin-bottom: 5vw;
+  background-size: 100%;
+  background-color: black;
+}
+
+.full-img {
+  position:relative;
+  width: 90vw;
+  height:auto;
+  margin:auto;
+  margin-top: 5vw;
+
+  background-size: 100%;
+  background-color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.copybox {
+  width: 50vw;
+  height:auto;
+  margin:auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  background-size: 100%;
+}
+.copybox h1 {
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+.copybox p {
+  font-size: 15px;
+  font-family: 'IBM Plex Mono';
+}
