@@ -406,15 +406,15 @@ hr {
   font-size: 21px;
 }
 
-#footer span {
+#sideways {
   font-family: 'Archivo Black', sans-serif;
   font-size: 10px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  display: inline-block;
+  display: inline;
   float: right;
   margin-right: 10px;
-  margin-top: 150px;
+  margin-top: 35px;
 }
 
 #fatcat {
@@ -426,4 +426,63 @@ hr {
   background-position: bottom;
   margin: 100px 40px -5px 50px;
   float: left;
+}
+
+#worktogether {
+  margin-top: 125px;
+}
+
+
+
+
+
+
+
+
+
+.wavetext:hover span {
+  display: inline-block;
+
+  animation-duration: .3s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes wave {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+.wavetext :nth-child( 10n + 0) {
+  animation-delay: -0.6s;
+}
+.wavetext :nth-child( 10n + 1) {
+  animation-delay: -0.54s;
+}
+.wavetext :nth-child( 10n + 2) {
+  animation-delay: -0.48s;
+}
+.wavetext :nth-child( 10n + 3) {
+  animation-delay: -0.42s;
+}
+.wavetext :nth-child( 10n + 4) {
+  animation-delay: -0.36s;
+}
+.wavetext :nth-child( 10n + 5) {
+  animation-delay: -0.3s;
+}
+.wavetext :nth-child( 10n + 6) {
+  animation-delay: -0.24s;
+}
+.wavetext :nth-child( 10n + 7) {
+  animation-delay: -0.18s;
+}
+.wavetext :nth-child( 10n + 8) {
+  animation-delay: -0.12s;
+}
+.wavetext :nth-child( 10n + 9) {
+  animation-delay: -0.06s;
 }

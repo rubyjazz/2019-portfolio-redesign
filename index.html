@@ -193,8 +193,8 @@ ILLUSTRATION,
 <div id="footer">
   <div id="fatcat"></div>
 
-  <div id="worktogether"><p><a href="#">LET'S WORK TOGETHER!</a><br/></p></div>
-  <span>&copy; 2019, RUBY JAZZ</span>
+  <a href="#"><div id="worktogether" class="wavetext"></div></a>
+  <div id="sideways">&copy; 2019, RUBY JAZZ</div>
 </div>
 
 
@@ -222,7 +222,17 @@ function toggleNavigation(event) {
 
 <!-- WAVETEXT EXPERIMENT -->
 
+<script>
+var text = "LET'S WORK TOGETHER!";
 
+for(var i in text) {
+  if(text[i] === " ") {
+    $(".wavetext").append( $("<span>").html("&nbsp;") );
+  } else {
+    $(".wavetext").append( $("<span>").text(text[i]) );
+  }
+}
+</script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
