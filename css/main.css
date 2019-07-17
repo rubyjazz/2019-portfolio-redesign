@@ -508,8 +508,7 @@ hr {
 
 
 .half-img-left {
-  width: 50vw;
-  position:relative;
+  width: 60vw;
   height:auto;
   float:left;
   margin-top: 5vw;
@@ -518,10 +517,8 @@ hr {
   background-color: white;
 }
 .half-img-right {
-  width: 50vw;
-  position:relative;
+  width: 60vw;
   margin-left: auto;
-  order: 2;
   height:auto;
   float:left;
   margin-top: 5vw;
@@ -530,13 +527,14 @@ hr {
   background-color: black;
 }
 .half-img-center {
-  width: 50vw;
+  width: 60vw;
   height:auto;
   margin: auto;
-  margin-top: -5vw;
+  margin-top: -8vw;
   margin-bottom: 5vw;
   background-size: 100%;
   background-color: black;
+  z-index: 100;
 }
 
 .full-img {
@@ -545,7 +543,6 @@ hr {
   height:auto;
   margin:auto;
   margin-top: 5vw;
-
   background-size: 100%;
   background-color: black;
 }
@@ -557,7 +554,7 @@ img {
 }
 
 .copybox {
-  width: 50vw;
+  width: 60vw;
   height:auto;
   margin:auto;
   margin-top: 5vw;
