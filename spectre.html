@@ -54,8 +54,9 @@
 
 <!-- BODY HERE -->
 
-<div id="main">
+
   <div class="project-frame">
+    <section>
     <div class="half-img-left"><img src="img/spectre-img-1.png"></div>
 
     <div class="copybox">
@@ -81,9 +82,9 @@ It was an exciting challenge to find a happy medium between classic and modern. 
     </div>
 
 
-
+    </section>
   </div>
-</div>
+
 
 
 <div id="footer">
@@ -112,6 +113,27 @@ It was an exciting challenge to find a happy medium between classic and modern. 
   event.preventDefault();
   body.classList.toggle('nav-open');
   }</script>
+
+  
+  <script>
+  const section = document.querySelector('section');
+
+let currentPos = window.pageYOffset;
+
+const update = () => {
+	const newPos = window.pageYOffset;
+	const diff = newPos - currentPos;
+	const speed = diff * 0.35;
+
+	section.style.transform = `skewY(${ speed }deg)`;
+
+	currentPos = newPos;
+
+	requestAnimationFrame(update);
+}
+
+update();
+</script>
 
 
   </body>
