@@ -56,8 +56,8 @@
 
 
   <div class="project-frame">
-    <section>
-    <div class="half-img-left"><img src="img/spectre-img-1.png"></div>
+
+    <section><div class="half-img-left"><img src="img/spectre-img-1.png"></div></section>
 
     <div class="copybox">
       <h1>PUTTING THE GHOST INTO GHOSTWRITING</h1><hr/>
@@ -66,13 +66,13 @@
 It was an exciting challenge to find a happy medium between classic and modern. The client wanted the literary nature of the site to shine through, but not to feel too old-fashioned. Overall, what we settled on was a clean and modern experience for a user who wants to tell their story to the world.</p>
     </div>
 
-    <div class="full-img" class="section"><img src="img/spectre-img-2.png"></div>
-    <div class="half-img-center"><img src="img/spectre-img-5.png"></div>
+    <section><div class="full-img" class="section"><img src="img/spectre-img-2.png"></div></section>
+    <section><div class="half-img-center"><img src="img/spectre-img-5.png"></div></section>
 
-    <div class="half-img-right"><img src="img/spectre-img-3.png"></div>
-    <div class="half-img-center-small"><img src="img/spectre-img-4.png"></div>
+    <section><div class="half-img-right"><img src="img/spectre-img-3.png"></div></section>
+    <section><div class="half-img-center-small"><img src="img/spectre-img-4.png"></div></section>
 
-    <div class="full-img"><img src="img/spectre-img-6.png"></div>
+    <section><div class="full-img"><img src="img/spectre-img-6.png"></div></section>
 
     <div class="copybox">
       <h1>PUTTING THE GHOST INTO GHOSTWRITING</h1><hr/>
@@ -80,7 +80,7 @@ It was an exciting challenge to find a happy medium between classic and modern. 
 <br/><br/>
 It was an exciting challenge to find a happy medium between classic and modern. The client wanted the literary nature of the site to shine through, but not to feel too old-fashioned. Overall, what we settled on was a clean and modern experience for a user who wants to tell their story to the world.</p>
     </div>
-</section>
+
 
   </div>
 
@@ -115,7 +115,7 @@ It was an exciting challenge to find a happy medium between classic and modern. 
 
 
   <script>
-  const section = document.querySelector('section');
+  const section = document.querySelectorAll('section');
 
 let currentPos = window.pageYOffset;
 
@@ -124,8 +124,11 @@ const update = () => {
 	const diff = newPos - currentPos;
 	const speed = diff * 0.35;
 
-	section.style.transform = `skewY(${ speed }deg)`;
 
+	section.forEach ( (s) => {
+		console.log (s)
+		s.style.transform = `skewY(${ speed }deg)`;
+	})
 	currentPos = newPos;
 
 	requestAnimationFrame(update);

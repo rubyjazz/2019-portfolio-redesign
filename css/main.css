@@ -507,7 +507,7 @@ hr {
 /*PROJECT PAGES*/
 
 section {
-  transition: transform 0.3s;
+  transition: transform 0.1s;
   will-change: transform;
 }
 
@@ -518,7 +518,6 @@ section {
   margin-top: 5vw;
   margin-bottom: 5vw;
   background-size: 100%;
-  background-color: white;
 }
 .half-img-right {
   width: 50vw;
@@ -537,7 +536,6 @@ section {
   margin-bottom: 10vw;
   background-size: 100%;
   z-index: 100;
-
 }
 
 .half-img-center-small {
@@ -548,7 +546,6 @@ section {
   margin-bottom: 5vw;
   background-size: 100%;
   z-index: 100;
-
 }
 
 .full-img {
