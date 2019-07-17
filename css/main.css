@@ -36,6 +36,7 @@ a {
   flex-direction: column;
 }
 
+
 .frame p {
   color: black;
   font-family: 'IBM Plex Mono', monospace;
@@ -56,7 +57,13 @@ main {
   transform: scale(.8);
 }
 
+.fade-in {
 
+  transition-delay: .2s;
+  -moz-animation: fadein .5s; /* Firefox */
+    -webkit-animation: fadein .5s; /* Safari and Chrome */
+    -o-animation: fadein .5s; /* Opera */
+}
 
 .nav-trigger {
   position: fixed;
@@ -141,26 +148,7 @@ main {
 .nav-open .nav-trigger span::after {
   transform: rotate(45deg);
 }
-/*
-.overlay {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #0072fc;
-  opacity: 0;
-  visibility: hidden;
-  transition: .5s;
-}
 
-.nav-open .overlay {
-  opacity: .5;
-  visibility: visible;
-
-}
-*/
 .nav-container {
   position: fixed;
   z-index: 200;
@@ -616,4 +604,39 @@ img {
 
 .details-copybox a:hover {
   color: #ff4cd0;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
