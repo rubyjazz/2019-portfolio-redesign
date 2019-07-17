@@ -272,7 +272,13 @@ margin-right: 30px;
 
 .underline {
   border-bottom: 4px dotted #0072fc;
+  transition: .5s;
 
+}
+
+.underline a:hover {
+  color: #ff4cd0;
+  transition: .5s;
 }
 
 #portfolio {
