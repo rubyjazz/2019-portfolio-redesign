@@ -506,11 +506,6 @@ hr {
 
 /*PROJECT PAGES*/
 
-section {
-  transition: transform 0.3s;
-  will-change: transform;
-}
-
 .half-img-left {
   width: 60vw;
   height:auto;
