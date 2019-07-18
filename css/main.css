@@ -646,72 +646,18 @@ img {
         opacity: 1;
     }
 }
-.contact-textbox {
 
-  z-index: 45;
-  width: 60vw;
-  margin-top: 0;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 5%;
-  -webkit-animation: fadeinDown 1.5s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadeinDown 1.5s; /* Firefox < 16 */
-       -ms-animation: fadeinDown 1.5s; /* Internet Explorer */
-        -o-animation: fadeinDown 1.5s; /* Opera < 12.1 */
-           animation: fadeinDown 1.5s;
+#contact p {
+  font-size: 90pt;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: black;
 }
 
-/* EMAIL FORM */
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 8px 10px; /* Some padding */
-  border: 1.5px solid #FFF; /* Gray border */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: -1.5px; /* Add a top margin */
-  margin-bottom: -1.5px; /* Bottom margin */
-  overflow: scroll;
-  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
-
-}
-
-input {
-  
+#contact span {
+  font-size: 90pt;
   font-family: 'IBM Plex Mono', sans-serif;
-}
-
-textarea {
-  font-family: 'IBM Plex Mono', Sans-Serif;
-}
-
-#subject {
-
-
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  border: 1.5px solid white;
-  padding: 12px 20px;
-  cursor: pointer;
-  margin-top: 10px;
-  color: #fff;
-  font-size: 15px;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #FFF;
-  color: #000;
-}
-
-/* Add a background color and some padding around the form */
-.email-form {
-
-
+  color: #ededed;
+   -webkit-text-stroke: 3px #0072fc;
+   font-family: 'Archivo Black',sans-serif;
+   word-wrap: break-word;
 }
