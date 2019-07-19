@@ -647,7 +647,7 @@ img {
   font-weight: black;
 }
 
-#contact span {
+#contact-outline {
   font-size: 6vw;
   font-family: 'IBM Plex Mono', sans-serif;
   color: #ededed;
@@ -655,6 +655,11 @@ img {
    font-family: 'Archivo Black',sans-serif;
    word-wrap: break-word;
    transition: ..4s;
+}
+
+#no-outline {
+  color: #0072fc;
+  -webkit-text-stroke: 0px #0072fc;
 }
 
 #contact span:hover {
