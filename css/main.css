@@ -730,12 +730,6 @@ img {
     font-size: 15px;
   }
 
-  .show:hover p {
-  font-size: 80px;
-  color: #0072fc;
-  letter-spacing: -15px;
-  }
-
    .img {
      visibility: visible;
      z-index: 1;
@@ -806,12 +800,42 @@ img {
   }
 
   #footer a {
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 700;
     font-size: 20px;
-    transition: .25s;
-    margin-left: 40px;
-     -webkit-transition: .25s;
-     transition-timing-function: ease-in-out;
   }
+  .project p {
+    font-size: 70px;
+  }
+  .details p {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 15px;
+  }
+
+
+   .img {
+     visibility: visible;
+     z-index: 1;
+     position:relative;
+     filter:invert(0%);
+     transition: .75s;
+      -webkit-transition: .75s;
+      margin-top: -20px;
+      width: 80vw;
+      height: 40vw;
+      background-size: 100%;
+
+   }
+
+   .show:hover > .img {
+     color: #0072fc;
+    margin-top: -20px;
+    width: 80vw;
+    height: 40vw;
+   }
+
+   .show:hover p {
+   color: #0072fc;
+   letter-spacing: -4px;
+   font-size: 85px;
+   }
+
 }
