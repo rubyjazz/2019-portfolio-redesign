@@ -760,10 +760,33 @@ img {
 @media screen and (max-width: 800px) {
 
 
-
-
 .nav-container {
   width: 100%;
+}
+.copybox {
+  width: 80vw;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+}
+.half-img-left {
+  width: 80vw;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+}
+.half-img-right {
+  width: 80vw;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+}
+.half-img-center {
+  width: 80vw;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+}
+.half-img-center-small {
+  margin-top: -35vw;
+  margin-bottom: 20vw;
+  height:60vw;
 }
 #fatcat {
   height: 140px;
@@ -792,7 +815,21 @@ img {
 
 
 @media screen and (max-width: 700px) {
-
+  .nav-container {
+    width: 100%;
+  }
+  .half-img-left {
+    width: 90vw;
+  }
+  .half-img-right {
+    width: 90vw;
+  }
+  .half-img-center {
+    width: 90vw;
+  }
+  .half-img-center-small {
+    height:80vw;
+  }
   #sideways {
     margin-top: 15px;
   }
