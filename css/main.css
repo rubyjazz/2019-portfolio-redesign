@@ -661,3 +661,7 @@ img {
    font-family: 'Archivo Black',sans-serif;
    word-wrap: break-word;
 }
+
+#contact span:hover {
+  color: #0072fc;
+}
