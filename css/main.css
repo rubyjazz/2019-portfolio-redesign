@@ -642,22 +642,24 @@ img {
   min-height: 60vh;
 }
 #contact p {
-  font-size: 90pt;
+  font-size: 7vw;
   font-family: 'Archivo Black', sans-serif;
   font-weight: black;
 }
 
 #contact span {
-  font-size: 90pt;
+  font-size: 6vw;
   font-family: 'IBM Plex Mono', sans-serif;
   color: #ededed;
    -webkit-text-stroke: 3px #0072fc;
    font-family: 'Archivo Black',sans-serif;
    word-wrap: break-word;
+   transition: ..4s;
 }
 
 #contact span:hover {
   color: #0072fc;
+  transition: .4s;
 }
 
 
@@ -720,7 +722,7 @@ img {
     transition: .2s;
     transition-timing-function: ease-in-out;
     z-index: 100;
-
+    word-wrap: break-word;
     margin: 0;
   }
   .details {
