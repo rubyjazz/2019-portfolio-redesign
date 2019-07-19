@@ -837,5 +837,8 @@ img {
    letter-spacing: -4px;
    font-size: 85px;
    }
+   #intro {
+     display: none;
+   }
 
 }
