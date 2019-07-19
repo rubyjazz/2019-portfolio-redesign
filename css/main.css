@@ -5,6 +5,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 a {
@@ -380,8 +381,7 @@ hr {
 }
 
 #footer {
-  display: inline-block;
-   bottom:0;
+  position: relative;
    width:100%;
 }
 
@@ -638,7 +638,9 @@ img {
         opacity: 1;
     }
 }
-
+#contact {
+  min-height: 60vh;
+}
 #contact p {
   font-size: 90pt;
   font-family: 'Archivo Black', sans-serif;
@@ -790,6 +792,17 @@ img {
   margin-bottom: 20vw;
   height:60vw;
 }
+#contact {
+  margin-top: 20vw;
+}
+#contact p {
+  font-size: 10vw;
+}
+
+#contact span {
+  font-size: 10vw;
+}
+
 #fatcat {
   height: 140px;
   width: 155px;
@@ -853,11 +866,6 @@ img {
 
    .img {
      visibility: visible;
-     z-index: 1;
-     position:relative;
-     filter:invert(0%);
-     transition: .75s;
-      -webkit-transition: .75s;
       margin-top: -20px;
       width: 80vw;
       height: 40vw;
