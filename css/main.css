@@ -805,6 +805,10 @@ img {
   font-size: 10vw;
 }
 
+#input {
+  display: none;
+}
+
 #fatcat {
   height: 140px;
   width: 155px;
