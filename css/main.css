@@ -16,7 +16,6 @@ a {
 .frame {
   display: flex;
   flex-basis: 1300px;
-  min-width: 800px;
   max-width: 1300px;
   margin: auto;
   padding-left: 50px;
@@ -42,19 +41,6 @@ a {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 60px;
   font-weight: 700;
-}
-
-main {
-  position: relative;
-  z-index: 1;
-  height: 100vh;
-  overflow: hidden;
-  box-shadow: 0 0 50px #000;
-  transition: transform .5s;
-}
-
-.nav-open main {
-  transform: scale(.8);
 }
 
 .fade-in {
@@ -157,6 +143,7 @@ main {
   background-color: #0072fc;
 	height: 100%;
 	width: 30%;
+  min-width: 500px;
   padding-top: 40vh;
   text-align:center;
   overflow: auto;
@@ -174,7 +161,6 @@ main {
   font-weight: bold;
   text-transform: uppercase;
   color: #FFF;
-  margin: 1.5em 0;
 }
 
 .nav {
@@ -242,30 +228,36 @@ main {
 #glasses {
   margin-left: 30px;
   margin-right: -20px;
+  width:130px;
 }
 
 #box {
+  width:130px;
   margin-left: -15px;
   margin-right: -20px;
   margin-bottom: -10px;
 }
 
 #waves {
+  width:130px;
   margin-left: -5px;
 }
 
 #eye {
-margin-bottom: -5px;
+  width:130px;
+  margin-bottom: -5px;
 }
 
 #skull {
-margin-bottom: -10px;
+  width:60px;
+  margin-bottom: -10px;
 }
 
 #package {
-margin-bottom: -15px;
-margin-left: -10px;
-margin-right: 30px;
+  width:70px;
+  margin-bottom: -15px;
+  margin-left: -10px;
+  margin-right: 30px;
 }
 
 
@@ -664,4 +656,162 @@ img {
 
 #contact span:hover {
   color: #0072fc;
+}
+
+
+
+/* MEDIA QUERIES START HERE */
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+}
+@media screen and (max-width: 1000px) {
+  .frame p {
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  #glasses {
+    width:80px;
+    margin-left: 30px;
+    margin-right: -5px;
+  }
+
+  #box {
+    width:70px;
+    margin-left: -5px;
+    margin-right: -10px;
+    margin-bottom: -5px;
+  }
+
+  #waves {
+    width:90px;
+    margin-left: -5px;
+  }
+
+  #eye {
+    width:85px;
+    margin-bottom: -5px;
+  }
+
+  #skull {
+    width:40px;
+    margin-bottom: -10px;
+  }
+
+  #package {
+    width:50px;
+    margin-bottom: -15px;
+    margin-left: -10px;
+    margin-right: 30px;
+  }
+
+  .project p {
+  font-family: 'Fjalla One', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: black;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+    z-index: 100;
+
+    margin: 0;
+  }
+  .details {
+    display:block;
+    margin: 30px 0px;
+  }
+  .details p {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 15px;
+  }
+
+  .show:hover p {
+  font-size: 80px;
+  color: #0072fc;
+  letter-spacing: -15px;
+  }
+
+   .img {
+     visibility: visible;
+     z-index: 1;
+     position:relative;
+     filter:invert(0%);
+     transition: .75s;
+      -webkit-transition: .75s;
+      margin-top: -20px;
+      height: 300px;
+      width: 600px;
+   }
+
+   .show:hover > .img {
+     font-size: 165px;
+     color: #0072fc;
+    margin-top: -40px;
+
+   }
+
+   .show:hover p {
+   color: #0072fc;
+   letter-spacing: -4px;
+   font-size: 85px;
+   }
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+
+.nav-container {
+  width: 100%;
+}
+#fatcat {
+  height: 140px;
+  width: 155px;
+  margin-bottom: 0;
+}
+#sideways {
+  margin-top: 60px;
+}
+#footer p {
+  display: inline-block;
+  position: absolute;
+  margin-top: 0px;
+
+}
+
+#footer a {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transition: .25s;
+   -webkit-transition: .25s;
+   transition-timing-function: ease-in-out;
+}
+
+
+@media screen and (max-width: 700px) {
+
+  #sideways {
+    margin-top: 15px;
+  }
+  #fatcat {
+    display: none;
+  }
+
+  #footer a {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .25s;
+    margin-left: 40px;
+     -webkit-transition: .25s;
+     transition-timing-function: ease-in-out;
+  }
 }
