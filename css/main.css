@@ -759,7 +759,9 @@ img {
 
 @media screen and (max-width: 800px) {
 
-
+.project-p {
+  word-break: break-all;
+}
 .nav-container {
   width: 100%;
 }
