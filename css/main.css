@@ -545,17 +545,17 @@ hr {
   margin-top: -15vw;
   margin-bottom: 5vw;
   background-size: 100%;
-
+  z-index: 105;
 }
 
 .full-img {
-  position:relative;
+
   width: 90vw;
   height:auto;
   margin:auto;
   margin-top: 5vw;
   background-size: 100%;
-
+  z-index: 5;
 }
 
 img {
@@ -855,6 +855,9 @@ img {
   }
   .half-img-center-small {
     height:80vw;
+  }
+  .half-img-center-small {
+    margin-top: 10vw;
   }
   #sideways {
     margin-top: 15px;
