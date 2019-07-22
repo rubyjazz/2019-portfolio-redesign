@@ -867,14 +867,17 @@ img {
     font-size: 20px;
   }
   .project p {
-    font-size: 60px;
+    font-size: 50px;
   }
+
   .details p {
     font-family: 'IBM Plex Mono', sans-serif;
     font-size: 15px;
   }
 
-
+.details-copybox {
+  width: 90vw;
+}
    .img {
      visibility: visible;
       margin-top: -20px;
