@@ -331,6 +331,9 @@ letter-spacing: -15px;
    transition: .75s;
     -webkit-transition: .75s;
  }
+ #jtg-img {
+   background-image: url(../img/jtg-menu-img.png);
+ }
 
 #spectre-img {
   background-image: url(../img/spectre-menu-img-4.png);
