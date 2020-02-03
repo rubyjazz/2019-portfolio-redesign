@@ -223,7 +223,8 @@ a {
 .outline {
   color: #ededed;
    -webkit-text-stroke: 2px #0072fc;
-   font-family: 'Archivo Black',sans-serif;
+   font-family: 'Archivo Black', sans-serif;
+   font-weight: 700;
 }
 
 #glasses {
@@ -438,7 +439,7 @@ hr {
 #worktogether {
   display: inline-block;
   margin-top: 125px;
-  width: 300px;
+  width: 320px;
   height: 40px;
 }
 
@@ -457,6 +458,8 @@ hr {
   animation-name: wave;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
 }
 @keyframes wave {
   from {
