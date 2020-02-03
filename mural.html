@@ -128,7 +128,14 @@ I was given nearly free reign over one of the halls in GitHub's new wing with in
     }
   }
   </script>
+  <!-- custom cursor-->
+  <script>
+  document.onmousemove = function(e) {
+    document.body.style.setProperty('--x',(e.clientX)+'px');
+    document.body.style.setProperty('--y',(e.clientY)+'px');
 
+  }
+  </script>
 
 
   </body>

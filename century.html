@@ -130,7 +130,14 @@ The name Century is motorgang slang for going one hundred miles per hour, as wel
   }
   </script>
 
+  <!-- custom cursor-->
+  <script>
+  document.onmousemove = function(e) {
+    document.body.style.setProperty('--x',(e.clientX)+'px');
+    document.body.style.setProperty('--y',(e.clientY)+'px');
 
+  }
+  </script>
 
   </body>
 </html>

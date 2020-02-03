@@ -1,8 +1,7 @@
 
 * {
   cursor: none;
-  margin:0;
-  padding:0;
+
 }
 body:before {
   content:"";
@@ -12,10 +11,9 @@ body:before {
   left:0;
   right:0;
   bottom:0;
-  background:
-  radial-gradient(farthest-side , #9198e5,transparent 100%)
-    calc(var(--x) - .75em) calc(var(--y) - .75em)/5em 5em  fixed no-repeat;
-  mix-blend-mode:exclusion;
+  background: radial-gradient(farthest-side , #9198e5 50%,transparent 50%)
+    calc(var(--x) - .75em) calc(var(--y) - .75em)/4em 4em  fixed no-repeat;
+  mix-blend-mode:difference;
   pointer-events: none;
 }
 body {

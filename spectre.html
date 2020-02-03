@@ -130,6 +130,14 @@ It was an exciting challenge to find a happy medium between classic and modern. 
   }
   </script>
 
+  <!-- custom cursor-->
+  <script>
+  document.onmousemove = function(e) {
+    document.body.style.setProperty('--x',(e.clientX)+'px');
+    document.body.style.setProperty('--y',(e.clientY)+'px');
+
+  }
+  </script>
 
 
   </body>

@@ -130,7 +130,14 @@ After rebranding, the focus moved to making assets to promote that year's Game O
     }
   }
   </script>
+  <!-- custom cursor-->
+  <script>
+  document.onmousemove = function(e) {
+    document.body.style.setProperty('--x',(e.clientX)+'px');
+    document.body.style.setProperty('--y',(e.clientY)+'px');
 
+  }
+  </script>
 
 
   </body>

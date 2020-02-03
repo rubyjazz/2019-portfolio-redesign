@@ -117,6 +117,15 @@ for(var i in text) {
 }
 </script>
 
+<!-- custom cursor-->
+<script>
+document.onmousemove = function(e) {
+  document.body.style.setProperty('--x',(e.clientX)+'px');
+  document.body.style.setProperty('--y',(e.clientY)+'px');
+
+}
+</script>
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
