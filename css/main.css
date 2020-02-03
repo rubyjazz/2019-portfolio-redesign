@@ -380,6 +380,10 @@ letter-spacing: -15px;
 background-image: url(../img/mural-menu-img.png);
 }
 
+#SDC-img {
+background-image: url(../img/SDC-menu-img.jpg);
+}
+
 .project p {
   display: inline-block;
 }
