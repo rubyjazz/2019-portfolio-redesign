@@ -365,6 +365,11 @@ background-image: url(../img/mural-menu-img.png);
 background-image: url(../img/SDC-menu-img.jpg);
 }
 
+#dur-img {
+background-image: url(../img/dur-menu-img.png);
+background-size: 100%;
+}
+
 .project p {
   display: inline-block;
 }
@@ -520,6 +525,7 @@ hr {
   background-repeat: no-repeat;
 }
 
+
 .half-img-left {
   width: 60vw;
   height:auto;
@@ -552,7 +558,7 @@ hr {
   width: auto;
   height:40vw;
   margin: auto;
-  margin-top: -15vw;
+  margin-top: -130px;
   margin-bottom: 5vw;
   background-size: 100%;
   z-index: 105;
@@ -566,6 +572,16 @@ hr {
   margin-top: 5vw;
   background-size: 100%;
   z-index: 5;
+}
+
+.third-img {
+  width: 27vw;
+  display: inline-block;
+  height:auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left: 2vw;
+  background-size: 100%;
 }
 
 img {
@@ -811,6 +827,11 @@ img {
   margin-bottom: 20vw;
   height:60vw;
 }
+.third-img {
+  width: 80vw;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+}
 #contact {
   margin-top: 20vw;
 }
@@ -870,6 +891,9 @@ img {
   }
   .half-img-center-small {
     margin-top: 10vw;
+  }
+  .third-img {
+    width: 90vw;
   }
   #sideways {
     margin-top: 15px;
