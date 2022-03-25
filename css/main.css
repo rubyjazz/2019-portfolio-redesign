@@ -608,14 +608,16 @@ img {
   margin-bottom: 5vw;
   background-size: 100%;
 }
-.copybox, .details-copybox h1 {
+.copybox h1, .details-copybox h1 {
   font-size: 40px;
   font-family: 'Fjalla One', sans-serif;
 
 }
-.copybox, .details-copybox p {
+.copybox p, .details-copybox p {
   font-size: 15px;
-  font-family: 'IBM Plex Mono';
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 25px;
 }
 
 .details-copybox span {
