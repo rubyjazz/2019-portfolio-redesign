@@ -52,7 +52,7 @@ a {
     -o-animation: fadein .5s; /* Opera */
 }
 
-.nav-trigger {
+/* .nav-trigger {
   position: fixed;
   z-index: 201;
   top: 40px;
@@ -207,6 +207,7 @@ a {
   font-size: 35px;
   text-decoration: underline white;
 }
+*/
 
 @keyframes slide-in {
   0% {
@@ -666,9 +667,7 @@ img {
         opacity: 1;
     }
 }
-#contact {
-  min-height: 60vh;
-}
+
 #contact p {
   font-size: 7vw;
   font-family: 'Archivo Black', sans-serif;
