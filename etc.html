@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> &#10024; Ruby Jazz Design &#10024;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Fjalla+One|IBM+Plex+Mono:400,700|Roboto+Condensed:700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#fafafa">
+
+  </head>
+
+  <body>
+
+
+    <!-- Nav --->
+    <a href="#navigation" class="nav-trigger">
+        Menu <span></span>
+    </a>
+
+    <nav class="nav-container" id="navigation">
+
+
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/rubyjazzy" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/rubyjazzdesign/" target="_blank">Instagram</a></li>
+      </ul>
+
+
+    </nav>
+
+<!-- BODY HERE -->
+
+
+  <div class="project-frame">
+
+    <a href="index.html"><div id="back-button"></div></a>
+
+
+    <div class="copybox">
+      <hr/><h1>...ETC</h1>
+      <p>A gallery of other work I've had the pleasure of working on.</p>
+    </div>
+
+    <div id="row-container">
+      <div class="fade-in"><img src="img/witch-animation.gif"></div>
+      <div class="fade-in"><img src="img/thank-you-card.png"></div>
+      <div class="fade-in"><img src="img/pipeline-forest.png"></div>
+    </div>
+
+    <div id="row-container">
+      <div class="fade-in"><img src="img/newsletter.jpeg"></div>
+      <div class="fade-in"><img src="img/game-off-menu-img.gif"></div>
+      <div class="fade-in"><img src="img/game-off-posters.png"></div>
+    </div>
+
+    <div id="row-container">
+      <div class="fade-in"><img src="img/gl-challenge-badge.jpeg"></div>
+      <div class="fade-in"><img src="img/bhm-illustration.jpeg"></div>
+      <div class="fade-in"><img src="img/onyx-new-year-card.png"></div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+<div id="footer">
+  <div id="fatcat"></div>
+
+  <a href="illos.html"><div id="worktogether" class="wavetext"></div></a>
+  <div id="sideways">&copy; <script>document.write(new Date().getFullYear())</script>, Ruby Jazz</div>
+</div>
+
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>var navTrigger = document.getElementsByClassName('nav-trigger')[0],
+    body = document.getElementsByTagName('body')[0];
+
+  navTrigger.addEventListener('click', toggleNavigation);
+
+  function toggleNavigation(event) {
+  event.preventDefault();
+  body.classList.toggle('nav-open');
+  }</script>
+
+  <script>
+  var text = "NEXT PROJECT";
+
+  for(var i in text) {
+    if(text[i] === " ") {
+      $(".wavetext").append( $("<span>").html("&nbsp;") );
+    } else {
+      $(".wavetext").append( $("<span>").text(text[i]) );
+    }
+  }
+  </script>
+
+
+
+  </body>
+</html>
