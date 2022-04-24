@@ -370,6 +370,11 @@ background-image: url(../img/dur-menu-img.png);
 background-size: 100%;
 }
 
+#etc-img {
+  background-image: url(../img/etc-menu-img.png);
+  background-size: 100%;
+}
+
 .project p {
   display: inline-block;
 }
