@@ -169,15 +169,18 @@ a {
   padding: 0;
   width: 500px;
   margin: auto;
+  margin-top: 10vh;
 }
 
 .nav a {
   display: block;
-  padding: .4em 0;
-  font-size: 30px;
+  padding-top: .8em;
+  padding-left: 1em;
+  font-size: 50px;
   font-weight: bold;
   font-family: 'IBM Plex Mono', monospace;
   text-decoration: none;
+  text-align: left;
   color: #FFF;
   transform: translateZ(0);
   transition: .5s;
@@ -204,7 +207,7 @@ a {
 }
 
 .nav a:hover {
-  font-size: 35px;
+  font-size: 45px;
   text-decoration: underline white;
 }
 
