@@ -169,15 +169,18 @@ a {
   padding: 0;
   width: 500px;
   margin: auto;
+  margin-top: 10vh;
 }
 
 .nav a {
   display: block;
-  padding: .4em 0;
-  font-size: 30px;
+  padding-top: .8em;
+  padding-left: 1em;
+  font-size: 50px;
   font-weight: bold;
   font-family: 'IBM Plex Mono', monospace;
   text-decoration: none;
+  text-align: left;
   color: #FFF;
   transform: translateZ(0);
   transition: .5s;
@@ -204,7 +207,7 @@ a {
 }
 
 .nav a:hover {
-  font-size: 35px;
+  font-size: 45px;
   text-decoration: underline white;
 }
 
@@ -368,6 +371,11 @@ background-image: url(../img/SDC-menu-img.jpg);
 #dur-img {
 background-image: url(../img/dur-menu-img.png);
 background-size: 100%;
+}
+
+#etc-img {
+  background-image: url(../img/etc-menu-img.png);
+  background-size: 100%;
 }
 
 .project p {
@@ -582,6 +590,25 @@ hr {
   margin-bottom: 5vw;
   margin-left: 2vw;
   background-size: 100%;
+}
+
+#row-container {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  overflow:hidden;
+  margin-bottom: 75px;
+}
+#row-container > div {
+  width: 27vw;
+  height: 20vw;
+}
+
+#row-container > div > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 img {
@@ -897,6 +924,21 @@ img {
   .third-img {
     width: 90vw;
   }
+
+  #row-container {
+    display: flex;                  /* establish flex container */
+    flex-direction: column;            /* default value; can be omitted */
+    flex-wrap:wrap;          /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+    overflow:hidden;
+    margin-bottom: 0px;
+  }
+  #row-container > div {
+    width: 90vw;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
   #sideways {
     margin-top: 15px;
   }
