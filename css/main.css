@@ -355,6 +355,10 @@ letter-spacing: -15px;
   background-image: url(../img/gh-illo-menu-img.png);
 }
 
+#cci-rebrand-img {
+  background-image: url(../img/cci-rebrand-menu-img.png);
+}
+
 #game-off-img {
   background-image: url(../img/game-off-menu-img.gif);
   background-size: 100%;
