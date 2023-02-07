@@ -378,6 +378,12 @@ background-image: url(../img/mural-menu-img.png);
 background-image: url(../img/SDC-menu-img.jpg);
 }
 
+#ERG-img {
+background-image: url(../img/erg-menu-img.png);
+background-size: 33%;
+background-repeat: repeat;
+}
+
 #dur-img {
 background-image: url(../img/dur-menu-img.png);
 background-size: 100%;
@@ -596,7 +602,6 @@ hr {
   width: 27vw;
   display: inline-block;
   height:auto;
-  flex-direction: row;
   margin-top: 5vw;
   margin-bottom: 5vw;
   margin-left: 2vw;
