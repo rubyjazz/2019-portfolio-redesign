@@ -343,6 +343,12 @@ letter-spacing: -15px;
   background-image: url(../img/spectre-menu-img-4.png);
 }
 
+#red-string-img {
+  background-image: url(../img/red-string-menu-img.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 #sat-img {
   background-image: url(../img/sat-img-1.jpg);
 }
@@ -590,6 +596,7 @@ hr {
   width: 27vw;
   display: inline-block;
   height:auto;
+  flex-direction: row;
   margin-top: 5vw;
   margin-bottom: 5vw;
   margin-left: 2vw;
