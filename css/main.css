@@ -753,9 +753,9 @@ img {
 @media screen and (max-width: 1000px) {
   .frame p {
     color: black;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 400;
   }
   #glasses {
     width:80px;
@@ -808,8 +808,9 @@ img {
     margin: 30px 0px;
   }
   .details p {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    font-weight: 400;
   }
 
    .img {
@@ -970,8 +971,9 @@ img {
   }
 
   .details p {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    font-weight: 400;
   }
 
 .details-copybox {
