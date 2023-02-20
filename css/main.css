@@ -145,7 +145,6 @@ a {
 	height: 100%;
 	width: 30%;
   min-width: 500px;
-  padding-top: 40vh;
   text-align:center;
   overflow: auto;
   transform: translateZ(0);
@@ -165,11 +164,15 @@ a {
 }
 
 .nav {
-  list-style: none;
+  position: fixed;
+  bottom: 0;
   padding: 0;
   width: 500px;
   margin: auto;
-  margin-top: 10vh;
+}
+
+.nav ul {
+  list-style: none;
 }
 
 .nav a {
